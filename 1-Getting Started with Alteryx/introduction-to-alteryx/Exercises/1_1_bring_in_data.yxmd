@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>2</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Connected DC High School Dataset. 
+Started import from 2nd row.</AnnotationText>
+          <DefaultAnnotationText>DC_High_School_Data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="student_id" size="254" source="File: C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="classroom name" size="254" source="File: C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="gender" size="254" source="File: C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="race/ethnicity" size="254" source="File: C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="parent level of education" size="254" source="File: C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="lunch" size="254" source="File: C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="test preparation course" size="254" source="File: C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="math score" size="254" source="File: C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="reading score" size="254" source="File: C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="writing score" size="254" source="File: C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="active" size="254" source="File: C:\Users\Public\Courses\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+  </Nodes>
+  <Connections />
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>1_1_bring_in_data</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="4391417c-30f7-43be-93a9-f02d47a8856f" />
+      <Telemetry>
+        <PreviousWorkflowId value="501c0cae-ff7e-44c5-88e0-1f052bd89194" />
+        <OriginWorkflowId value="501c0cae-ff7e-44c5-88e0-1f052bd89194" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
