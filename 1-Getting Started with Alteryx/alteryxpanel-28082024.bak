@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="270" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Alteryx\Engine_20016_246ec381064e49009601691f0058ff63_\Engine_20016_650b7d72d56c3d4096bfa9b180fef440~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>2</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DC_High_School_Data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="student_id" size="254" source="File: C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="classroom name" size="254" source="File: C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="gender" size="254" source="File: C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="race/ethnicity" size="254" source="File: C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="parent level of education" size="254" source="File: C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="lunch" size="254" source="File: C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="test preparation course" size="254" source="File: C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="math score" size="254" source="File: C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="reading score" size="254" source="File: C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="writing score" size="254" source="File: C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+            <Field name="active" size="254" source="File: C:\Users\Admin\Desktop\1-Getting Started with Alteryx\introduction-to-alteryx\Datasets\DC_High_School_Data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="student_id" selected="True" />
+            <SelectField field="classroom name" selected="True" />
+            <SelectField field="gender" selected="True" />
+            <SelectField field="race/ethnicity" selected="True" />
+            <SelectField field="parent level of education" selected="True" />
+            <SelectField field="lunch" selected="True" />
+            <SelectField field="test preparation course" selected="True" />
+            <SelectField field="math score" selected="True" />
+            <SelectField field="reading score" selected="True" />
+            <SelectField field="writing score" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="318" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Admin\AppData\Local\Temp\Alteryx\Engine_20016_246ec381064e49009601691f0058ff63_\Engine_20016_a83f59bb6b620e4ab71cb56f7608a0d8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>alteryxpanel-28082024</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="90281e9b-4ee9-42d1-9490-f31beaaae5d8" />
+      <Telemetry>
+        <PreviousWorkflowId value="c3b1f974-bca3-4265-b088-e39617e2b29a" />
+        <OriginWorkflowId value="c3b1f974-bca3-4265-b088-e39617e2b29a" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
