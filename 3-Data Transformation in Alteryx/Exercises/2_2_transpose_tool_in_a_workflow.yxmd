@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Public\Courses\data-transformation-in-alteryx\Datasets\Genesis_LLC_Company_HR_Data.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Genesis_LLC_Company_HR_Data.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="414" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Region" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Region" selected="False" />
+            <Field field="Alabama" selected="True" />
+            <Field field="Arizona" selected="True" />
+            <Field field="Arkansas" selected="True" />
+            <Field field="California" selected="True" />
+            <Field field="Colorado" selected="True" />
+            <Field field="Connecticut" selected="True" />
+            <Field field="Delaware" selected="True" />
+            <Field field="District_of_Columbia" selected="True" />
+            <Field field="Florida" selected="True" />
+            <Field field="Georgia" selected="True" />
+            <Field field="Idaho" selected="True" />
+            <Field field="Illinois" selected="True" />
+            <Field field="Indiana" selected="True" />
+            <Field field="Iowa" selected="True" />
+            <Field field="Kansas" selected="True" />
+            <Field field="Kentucky" selected="True" />
+            <Field field="Louisiana" selected="True" />
+            <Field field="Maine" selected="True" />
+            <Field field="Maryland" selected="True" />
+            <Field field="Massachusetts" selected="True" />
+            <Field field="Michigan" selected="True" />
+            <Field field="Minnesota" selected="True" />
+            <Field field="Mississippi" selected="True" />
+            <Field field="Missouri" selected="True" />
+            <Field field="Montana" selected="True" />
+            <Field field="Nebraska" selected="True" />
+            <Field field="Nevada" selected="True" />
+            <Field field="New_Hampshire" selected="True" />
+            <Field field="New_Jersey" selected="True" />
+            <Field field="New_Mexico" selected="True" />
+            <Field field="New_York" selected="True" />
+            <Field field="North_Carolina" selected="True" />
+            <Field field="North_Dakota" selected="True" />
+            <Field field="Ohio" selected="True" />
+            <Field field="Oklahoma" selected="True" />
+            <Field field="Oregon" selected="True" />
+            <Field field="Pennsylvania" selected="True" />
+            <Field field="Rhode_Island" selected="True" />
+            <Field field="South_Carolina" selected="True" />
+            <Field field="South_Dakota" selected="True" />
+            <Field field="Tennessee" selected="True" />
+            <Field field="Texas" selected="True" />
+            <Field field="Utah" selected="True" />
+            <Field field="Vermont" selected="True" />
+            <Field field="Virginia" selected="True" />
+            <Field field="Washington" selected="True" />
+            <Field field="West_Virginia" selected="True" />
+            <Field field="Wisconsin" selected="True" />
+            <Field field="Wyoming" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="66" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="4" />
+          <Fields>
+            <Field name="state" />
+            <Field name="jan" />
+            <Field name="feb" />
+            <Field name="mar" />
+          </Fields>
+          <Data>
+            <r>
+              <c>texas</c>
+              <c>100</c>
+              <c>200</c>
+              <c>400</c>
+            </r>
+            <r>
+              <c>ca</c>
+              <c>300</c>
+              <c>400</c>
+              <c>500</c>
+            </r>
+            <r>
+              <c>in</c>
+              <c>200</c>
+              <c>300</c>
+              <c>450</c>
+            </r>
+            <r>
+              <c />
+              <c />
+              <c />
+              <c />
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="150" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="state" />
+          </KeyFields>
+          <DataFields>
+            <Field field="state" selected="False" />
+            <Field field="jan" selected="True" />
+            <Field field="feb" selected="True" />
+            <Field field="mar" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="402" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Order ID" />
+            <Field field="Customer Name" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Row ID" selected="False" />
+            <Field field="Order ID" selected="False" />
+            <Field field="Order Date" selected="False" />
+            <Field field="Ship Date" selected="False" />
+            <Field field="Ship Mode" selected="False" />
+            <Field field="Customer ID" selected="False" />
+            <Field field="Customer Name" selected="False" />
+            <Field field="Segment" selected="False" />
+            <Field field="Country/Region" selected="False" />
+            <Field field="City" selected="False" />
+            <Field field="State" selected="False" />
+            <Field field="Postal Code" selected="False" />
+            <Field field="Region" selected="False" />
+            <Field field="Product ID" selected="False" />
+            <Field field="Category" selected="False" />
+            <Field field="Sub-Category" selected="False" />
+            <Field field="Product Name" selected="False" />
+            <Field field="Sales" selected="True" />
+            <Field field="Quantity" selected="False" />
+            <Field field="Discount" selected="False" />
+            <Field field="Profit" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="486" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" rename="Metric" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="498" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\honke\OneDrive\Documents\Data Transformation in Alteryx - Datacamp\2_Screencast_Dataset.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2_Screencast_Dataset.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="65" y="425" width="397" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Reporting Tool</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Reporting Tool</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="378" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="Region" />
+              </GroupFields>
+              <HeaderField field="State" />
+              <DataField field="Sum_Sales" />
+              <Methods>
+                <Method method="Sum" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Region" size="254" source="CrossTab:Group:Sum:" type="V_WString" />
+                <Field name="Alabama" source="CrossTab:Header:State:Alabama:Sum:" type="Double" />
+                <Field name="Arizona" source="CrossTab:Header:State:Arizona:Sum:" type="Double" />
+                <Field name="Arkansas" source="CrossTab:Header:State:Arkansas:Sum:" type="Double" />
+                <Field name="California" source="CrossTab:Header:State:California:Sum:" type="Double" />
+                <Field name="Colorado" source="CrossTab:Header:State:Colorado:Sum:" type="Double" />
+                <Field name="Connecticut" source="CrossTab:Header:State:Connecticut:Sum:" type="Double" />
+                <Field name="Delaware" source="CrossTab:Header:State:Delaware:Sum:" type="Double" />
+                <Field name="District_of_Columbia" source="CrossTab:Header:State:District of Columbia:Sum:" type="Double" />
+                <Field name="Florida" source="CrossTab:Header:State:Florida:Sum:" type="Double" />
+                <Field name="Georgia" source="CrossTab:Header:State:Georgia:Sum:" type="Double" />
+                <Field name="Idaho" source="CrossTab:Header:State:Idaho:Sum:" type="Double" />
+                <Field name="Illinois" source="CrossTab:Header:State:Illinois:Sum:" type="Double" />
+                <Field name="Indiana" source="CrossTab:Header:State:Indiana:Sum:" type="Double" />
+                <Field name="Iowa" source="CrossTab:Header:State:Iowa:Sum:" type="Double" />
+                <Field name="Kansas" source="CrossTab:Header:State:Kansas:Sum:" type="Double" />
+                <Field name="Kentucky" source="CrossTab:Header:State:Kentucky:Sum:" type="Double" />
+                <Field name="Louisiana" source="CrossTab:Header:State:Louisiana:Sum:" type="Double" />
+                <Field name="Maine" source="CrossTab:Header:State:Maine:Sum:" type="Double" />
+                <Field name="Maryland" source="CrossTab:Header:State:Maryland:Sum:" type="Double" />
+                <Field name="Massachusetts" source="CrossTab:Header:State:Massachusetts:Sum:" type="Double" />
+                <Field name="Michigan" source="CrossTab:Header:State:Michigan:Sum:" type="Double" />
+                <Field name="Minnesota" source="CrossTab:Header:State:Minnesota:Sum:" type="Double" />
+                <Field name="Mississippi" source="CrossTab:Header:State:Mississippi:Sum:" type="Double" />
+                <Field name="Missouri" source="CrossTab:Header:State:Missouri:Sum:" type="Double" />
+                <Field name="Montana" source="CrossTab:Header:State:Montana:Sum:" type="Double" />
+                <Field name="Nebraska" source="CrossTab:Header:State:Nebraska:Sum:" type="Double" />
+                <Field name="Nevada" source="CrossTab:Header:State:Nevada:Sum:" type="Double" />
+                <Field name="New_Hampshire" source="CrossTab:Header:State:New Hampshire:Sum:" type="Double" />
+                <Field name="New_Jersey" source="CrossTab:Header:State:New Jersey:Sum:" type="Double" />
+                <Field name="New_Mexico" source="CrossTab:Header:State:New Mexico:Sum:" type="Double" />
+                <Field name="New_York" source="CrossTab:Header:State:New York:Sum:" type="Double" />
+                <Field name="North_Carolina" source="CrossTab:Header:State:North Carolina:Sum:" type="Double" />
+                <Field name="North_Dakota" source="CrossTab:Header:State:North Dakota:Sum:" type="Double" />
+                <Field name="Ohio" source="CrossTab:Header:State:Ohio:Sum:" type="Double" />
+                <Field name="Oklahoma" source="CrossTab:Header:State:Oklahoma:Sum:" type="Double" />
+                <Field name="Oregon" source="CrossTab:Header:State:Oregon:Sum:" type="Double" />
+                <Field name="Pennsylvania" source="CrossTab:Header:State:Pennsylvania:Sum:" type="Double" />
+                <Field name="Rhode_Island" source="CrossTab:Header:State:Rhode Island:Sum:" type="Double" />
+                <Field name="South_Carolina" source="CrossTab:Header:State:South Carolina:Sum:" type="Double" />
+                <Field name="South_Dakota" source="CrossTab:Header:State:South Dakota:Sum:" type="Double" />
+                <Field name="Tennessee" source="CrossTab:Header:State:Tennessee:Sum:" type="Double" />
+                <Field name="Texas" source="CrossTab:Header:State:Texas:Sum:" type="Double" />
+                <Field name="Utah" source="CrossTab:Header:State:Utah:Sum:" type="Double" />
+                <Field name="Vermont" source="CrossTab:Header:State:Vermont:Sum:" type="Double" />
+                <Field name="Virginia" source="CrossTab:Header:State:Virginia:Sum:" type="Double" />
+                <Field name="Washington" source="CrossTab:Header:State:Washington:Sum:" type="Double" />
+                <Field name="West_Virginia" source="CrossTab:Header:State:West Virginia:Sum:" type="Double" />
+                <Field name="Wisconsin" source="CrossTab:Header:State:Wisconsin:Sum:" type="Double" />
+                <Field name="Wyoming" source="CrossTab:Header:State:Wyoming:Sum:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="282" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Null()" field="State Sales" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[State Sales = Null()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="186" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Region" action="GroupBy" rename="Region" />
+                <SummarizeField field="State" action="GroupBy" rename="State" />
+                <SummarizeField field="Order ID" action="GroupBy" rename="Order ID" />
+                <SummarizeField field="Sales" action="Sum" rename="Sum_Sales" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="90" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Sales" selected="True" type="Double" size="8" />
+                <SelectField field="Quantity" selected="True" type="Double" size="8" />
+                <SelectField field="Discount" selected="True" type="Double" size="8" />
+                <SelectField field="Profit" selected="True" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2_2_transpose_tool_in_a_workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d39c69a4-47dc-49e3-b312-0925bfd20c7f" />
+      <Telemetry>
+        <PreviousWorkflowId value="c9525f48-9ac6-4ae1-ba6e-8ae3380c313c" />
+        <OriginWorkflowId value="c9525f48-9ac6-4ae1-ba6e-8ae3380c313c" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

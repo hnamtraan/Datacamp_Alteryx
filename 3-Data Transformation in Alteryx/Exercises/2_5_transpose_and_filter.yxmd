@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="104" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Public\Courses\data-transformation-in-alteryx\Datasets\Genesis_LLC_Company_HR_Data.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Genesis_LLC_Company_HR_Data.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="233" y="54" width="335" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Chapter 2 Exercise 2</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Chapter 2 Exercise 2</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="258" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="EmployeeNumber" />
+              </KeyFields>
+              <DataFields>
+                <Field field="Age" selected="True" />
+                <Field field="Attrition" selected="True" />
+                <Field field="BusinessTravel" selected="True" />
+                <Field field="DailyRate" selected="True" />
+                <Field field="Department" selected="True" />
+                <Field field="DistanceFromHome" selected="True" />
+                <Field field="Education" selected="True" />
+                <Field field="EducationField" selected="True" />
+                <Field field="EmployeeCount" selected="True" />
+                <Field field="EmployeeNumber" selected="True" />
+                <Field field="EnvironmentSatisfaction" selected="True" />
+                <Field field="Gender" selected="True" />
+                <Field field="HourlyRate" selected="True" />
+                <Field field="JobInvolvement" selected="True" />
+                <Field field="JobLevel" selected="True" />
+                <Field field="JobRole" selected="True" />
+                <Field field="MaritalStatus" selected="True" />
+                <Field field="MonthlyIncome" selected="True" />
+                <Field field="MonthlyRate" selected="True" />
+                <Field field="NumCompaniesWorked" selected="True" />
+                <Field field="Over18" selected="True" />
+                <Field field="OverTime" selected="True" />
+                <Field field="PercentSalaryHike" selected="True" />
+                <Field field="PerformanceRating" selected="True" />
+                <Field field="RelationshipSatisfaction" selected="True" />
+                <Field field="StandardHours" selected="True" />
+                <Field field="StockOptionLevel" selected="True" />
+                <Field field="TotalWorkingYears" selected="True" />
+                <Field field="TrainingTimesLastYear" selected="True" />
+                <Field field="WorkLifeBalance" selected="True" />
+                <Field field="YearsAtCompany" selected="True" />
+                <Field field="YearsInCurrentRole" selected="True" />
+                <Field field="YearsSinceLastPromotion" selected="True" />
+                <Field field="YearsWithCurrManager" selected="True" />
+                <Field field="Job Satisfaction 1" selected="True" />
+                <Field field="Job Satisfaction 2" selected="True" />
+                <Field field="Job Satisfaction 3" selected="True" />
+                <Field field="Job Satisfaction 4" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="450" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Metric or Dimension]="Gender" &amp;&amp; [Value]="Male"</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Metric or Dimension]="Gender" &amp;&amp; [Value]="Male"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="354" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Name" selected="True" rename="Metric or Dimension" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>2_5_transpose_and_filter</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3d026415-daac-4960-8cd6-07b9d74195bb" />
+      <Telemetry>
+        <PreviousWorkflowId value="e5658768-0f5a-4d59-9ad9-5cf36477555a" />
+        <OriginWorkflowId value="a035138a-b8ae-4872-8516-91c6255b7a60" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
