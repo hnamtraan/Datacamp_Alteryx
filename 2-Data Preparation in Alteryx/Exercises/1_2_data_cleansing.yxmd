@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Student\AppData\Local\Temp\1\Engine_4700_10990189b36cb44a8567436dae7d3485_\Engine_4700_6425c3755347374a90fbbd0594f6213f~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse the initial dataset</AnnotationText>
+          <DefaultAnnotationText>Browse the initial dataset</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Borough" selected="True" rename="Location Number" />
+            <SelectField field="Ease-ment" selected="False" />
+            <SelectField field="Sale Price" selected="True" type="Double" size="8" />
+            <SelectField field="Sale Date" selected="True" type="DateTime" size="19" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Rename, remove fields, and change data types</AnnotationText>
+          <DefaultAnnotationText>Rename, remove fields, and change data types</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>nyc-rolling-sales.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Borough" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Neighborhood" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Building Class Category" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Tax Class At Present" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Block" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Lot" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Ease-ment" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Building Class At Present" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Apartment Number" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Zip Code" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Residential Units" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Commercial Units" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Total Units" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Land Square Feet" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Gross Square Feet" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Year Built" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Tax Class At Time Of Sale" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Building Class At Time Of Sale" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Sale Price" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+            <Field name="Sale Date" size="254" source="File: C:\Users\Public\Courses\data-preparation-in-alteryx\Datasets\nyc-rolling-sales.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="306" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Student\AppData\Local\Temp\1\Engine_4700_10990189b36cb44a8567436dae7d3485_\Engine_4700_8895cada9a5a654297e98d19d41636ab~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse the results</AnnotationText>
+          <DefaultAnnotationText>Browse the results</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings>
+        <Position x="294" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Location Number","Neighborhood","Building Class Category","Tax Class At Present","Block","Lot","Building Class At Present","Address","Apartment Number","Zip Code","Residential Units","Commercial Units","Total Units","Land Square Feet","Gross Square Feet","Year Built","Tax Class At Time Of Sale","Building Class At Time Of Sale","Sale Price","Sale Date"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">True</Value>
+          <Value name="Drop Down (81)">title</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Clean leading and trailing whitespace, and modify case</AnnotationText>
+          <DefaultAnnotationText>Clean leading and trailing whitespace, and modify case</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="414" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Student\AppData\Local\Temp\1\Engine_4700_10990189b36cb44a8567436dae7d3485_\Engine_4700_50f1f8e867f2c54b97862a2422de3210~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Browse the results</AnnotationText>
+          <DefaultAnnotationText>Browse the results</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="11" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output26" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>1_2_data_cleansing</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author>Deanna Sanchez, Alteryx ACE</Author>
+      <Company />
+      <Copyright>2024</Copyright>
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="33e7adfa-a825-4e2f-877f-b14c1f18f9a0" />
+      <Telemetry>
+        <PreviousWorkflowId value="172cec5b-d2b1-43dd-a7e9-a8dad84d794c" />
+        <OriginWorkflowId value="82a5b993-8916-4269-90a6-2f594c9aab6d" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
